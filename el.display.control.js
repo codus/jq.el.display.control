@@ -1,3 +1,5 @@
+// VERSION: 0.0.1
+// git@github.com:codus/jq.el.display.control.git
 (function($) {
   $.fn.elDisplayControl = function(options) {
     // { 
