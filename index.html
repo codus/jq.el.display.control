@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>teste</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="el.display.control.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#select_teste").elDisplayControl({
+        1: ".js_pessoa_juridica",
+        2: ".js_pessoa_fisica",
+        3: ".js_pessoa_estranha"
+      });
+
+      $("#select_teste2").elDisplayControl({
+        1: ".js_maior",
+        2: ".js_menor"
+      });
+    });
+  </script>
+</head>
+<body>
+
+<select id="select_teste">
+  <option value=1>pj</option>
+  <option value=2>pf</option>
+  <option value=3>pe</option>
+</select>
+
+<p class="js_pessoa_fisica">pf</p>
+<p class="js_pessoa_fisica">pf</p>
+<p class="js_pessoa_juridica">pj</p>
+<p class="js_pessoa_juridica">pj</p>
+<p class="js_pessoa_juridica">pj</p>
+<p class="js_pessoa_estranha">pe</p>
+<p class="js_pessoa_estranha">pe</p>
+
+<select id="select_teste2">
+  <option value=1>maior</option>
+  <option value=2>menor</option>
+</select>
+
+<p class="js_maior">maior</p>
+<p class="js_menor">menor</p>
+<p class="js_maior">maior</p>
+</body>
+</html>
